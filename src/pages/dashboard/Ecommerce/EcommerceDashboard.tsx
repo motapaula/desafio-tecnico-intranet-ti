@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import { HyperDatepicker } from 'components';
 import { useDatePicker } from 'hooks';
 import Statistics from './Statistics';
-import PerformanceChart from './PerformanceChart';
-import RevenueChart from './RevenueChart';
-import RevenueByLocationChart from './RevenueByLocationChart';
 import SalesChart from './SalesChart';
 import Activity from './Activity';
 import Products from './Products';
@@ -48,28 +45,16 @@ const EcommerceDashboard = () => {
                 </Col>
 
                 <Col xl={7} lg={6}>
-                    <PerformanceChart />
+                    <Products />
                 </Col>
             </Row>
 
             <Row>
                 <Col lg={8}>
-                    <RevenueChart />
+                    <Activity />
                 </Col>
                 <Col lg={4}>
-                    <RevenueByLocationChart />
-                </Col>
-            </Row>
-
-            <Row>
-                <Col xl={{ span: 6, order: 1 }} lg={{ span: 12, order: 2 }}>
-                    <Products />
-                </Col>
-                <Col xl={3} lg={{ span: 6, order: 1 }}>
                     <SalesChart />
-                </Col>
-                <Col xl={3} lg={{ span: 6, order: 1 }}>
-                    <Activity />
                 </Col>
             </Row>
         </>

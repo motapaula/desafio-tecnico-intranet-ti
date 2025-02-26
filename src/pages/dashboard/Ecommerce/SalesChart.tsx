@@ -36,12 +36,12 @@ const SalesChart = () => {
             <Card.Body>
                 <CardTitle
                     containerClass="d-flex align-items-center justify-content-between"
-                    title="Total Sales"
+                    title="Total de Atendimentos"
                     menuItems={[
-                        { label: 'Sales Report' },
-                        { label: 'Export Report' },
-                        { label: 'Profit' },
-                        { label: 'Action' },
+                        { label: 'Atendimentos Presenciais' },
+                        { label: 'Atendimentos por telefone' },
+                        { label: 'Vendas concluídas' },
+                        { label: 'Cancelamentos de planos' },
                     ]}
                 />
 
@@ -55,19 +55,19 @@ const SalesChart = () => {
 
                 <div className="chart-widget-list">
                     <p>
-                        <i className="mdi mdi-square text-primary"></i> Direct
+                        <i className="mdi mdi-square text-primary"></i> Atendimentos por telefone
                         <span className="float-end">$300.56</span>
                     </p>
                     <p>
-                        <i className="mdi mdi-square text-danger"></i> Affilliate
+                        <i className="mdi mdi-square text-danger"></i> Atendimentos Presenciais
                         <span className="float-end">$135.18</span>
                     </p>
                     <p>
-                        <i className="mdi mdi-square text-success"></i> Sponsored
+                        <i className="mdi mdi-square text-success"></i> Vendas concluídas
                         <span className="float-end">$48.96</span>
                     </p>
                     <p className="mb-0">
-                        <i className="mdi mdi-square text-warning"></i> E-mail
+                        <i className="mdi mdi-square text-warning"></i> Cancelamentos de planos
                         <span className="float-end">$154.02</span>
                     </p>
                 </div>

@@ -2,8 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import LogoLight from 'assets/images/logo.png';
-import LogoDark from 'assets/images/logo-dark.png';
+import Logo from 'assets/images/intranet_logo.jpg';
 import { useAccountLayout } from './hooks';
 
 type AccountLayoutProps = {
@@ -23,14 +22,10 @@ const AccountLayout2 = ({ bottomLinks, children }: AccountLayoutProps) => {
                     <Card.Body>
                         {/* logo */}
                         <div className="auth-brand text-center text-lg-start">
-                            <Link to="/" className="logo-dark">
-                                <span>
-                                    <img src={LogoDark} alt="" height="18" />
-                                </span>
-                            </Link>
+                            
                             <Link to="/" className="logo-light">
                                 <span>
-                                    <img src={LogoLight} alt="" height="18" />
+                                <img src={Logo} alt="" height="18" width={200} />
                                 </span>
                             </Link>
                         </div>
@@ -46,13 +41,13 @@ const AccountLayout2 = ({ bottomLinks, children }: AccountLayoutProps) => {
             {/* Auth fluid right content */}
             <div className="auth-fluid-right text-center">
                 <div className="auth-user-testimonial">
-                    <h2 className="mb-3">{t('I love the color!')}</h2>
+                    <h2 className="mb-3">{t('Acesso seguro, colaboração eficiente.')}</h2>
                     <p className="lead">
-                        <i className="mdi mdi-format-quote-open"></i>{' '}
-                        {t("It's a elegent templete. I love it very much! .")}{' '}
-                        <i className="mdi mdi-format-quote-close"></i>
+                        
+                        {t(" Bem-vindo à sua central de produtividade! Acesse a intranet para conectar-se com sua equipe, acessar informações essenciais e manter seu trabalho sempre em movimento – com segurança e praticidade.")}{' '}
+                        
                     </p>
-                    <p>{t('- Hyper Admin User')}</p>
+                    <p>{t('- Hub Intranet')}</p>
                 </div>
             </div>
         </div>

@@ -7,30 +7,30 @@ const Statistics = () => {
             <Row>
                 <Col sm={6}>
                     <StatisticsWidget
-                        icon="mdi mdi-account-multiple"
-                        description="Number of Customers"
-                        title="Customers"
-                        stats="36,254"
+                        icon="mdi mdi-check-circle-outline"
+                        description="Número de Tarefas Concluídas"
+                        title="Tarefas"
+                        stats="42"
                         trend={{
                             textClass: 'text-success',
                             icon: 'mdi mdi-arrow-up-bold',
-                            value: '5.27%',
-                            time: 'Since last month',
+                            value: '8.5%',
+                            time: 'Desde o último mês',
                         }}
                     ></StatisticsWidget>
                 </Col>
 
                 <Col sm={6}>
                     <StatisticsWidget
-                        icon="mdi mdi-cart-plus"
-                        description="Number of Orders"
-                        title="Orders"
-                        stats="5,543"
+                        icon="mdi mdi-calendar-check-outline"
+                        description="Reuniões Agendadas"
+                        title="Reuniões"
+                        stats="5"
                         trend={{
                             textClass: 'text-danger',
                             icon: 'mdi mdi-arrow-down-bold',
-                            value: '1.08%',
-                            time: 'Since last month',
+                            value: '-2%',
+                            time: 'Desde o último mês',
                         }}
                     ></StatisticsWidget>
                 </Col>
@@ -40,14 +40,14 @@ const Statistics = () => {
                 <Col sm={6}>
                     <StatisticsWidget
                         icon="mdi mdi-currency-usd"
-                        description="Revenue"
-                        title="Revenue"
-                        stats="$6,254"
+                        description="Colaboradores"
+                        title="Colaboradores Ativos"
+                        stats="125"
                         trend={{
-                            textClass: 'text-danger',
-                            icon: 'mdi mdi-arrow-down-bold',
-                            value: '7.00%',
-                            time: 'Since last month',
+                            textClass: 'text-success',
+                            icon: 'mdi mmdi-account-group-outline',
+                            value: '4.2%',
+                            time: 'Desde o último mês',
                         }}
                     ></StatisticsWidget>
                 </Col>
@@ -55,14 +55,14 @@ const Statistics = () => {
                 <Col sm={6}>
                     <StatisticsWidget
                         icon="mdi mdi-pulse"
-                        description="Growth"
-                        title="Growth"
-                        stats="+ 30.56%"
+                        description="Projetos"
+                        title="Projetos em Andamento"
+                        stats="+ 15%"
                         trend={{
                             textClass: 'text-success',
-                            icon: 'mdi mdi-arrow-up-bold',
-                            value: '4.87%',
-                            time: 'Since last month',
+                            icon: 'mdi mdi-folder-outline',
+                            value: '15%',
+                            time: 'Desde o último mês',
                         }}
                     ></StatisticsWidget>
                 </Col>

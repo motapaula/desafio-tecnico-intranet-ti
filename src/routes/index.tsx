@@ -9,7 +9,7 @@ import { useRedux } from 'hooks';
 // lazy load all the views
 
 // auth
-const Login = React.lazy(() => import('pages/account/Login'));
+/* const Login = React.lazy(() => import('pages/account/Login')); */
 const Logout = React.lazy(() => import('pages/account/Logout'));
 const Register = React.lazy(() => import('pages/account/Register'));
 const Confirm = React.lazy(() => import('pages/account/Confirm'));
@@ -55,6 +55,8 @@ const Customers = React.lazy(() => import('pages/apps/Ecommerce/Customers'));
 const Cart = React.lazy(() => import('pages/apps/Ecommerce/Cart'));
 const Checkout = React.lazy(() => import('pages/apps/Ecommerce/Checkout/'));
 const Sellers = React.lazy(() => import('pages/apps/Ecommerce/Sellers'));
+const Cadastro = React.lazy(() => import('pages/apps/Cadastro'));
+
 
 // - email
 const Inbox = React.lazy(() => import('pages/apps/Email/Inbox'));
@@ -195,18 +197,18 @@ const AllRoutes = () => {
                 {
                     path: 'account',
                     children: [
-                        { path: 'login', element: <LoadComponent component={Login} /> },
-                        { path: 'register', element: <LoadComponent component={Register} /> },
-                        { path: 'confirm', element: <LoadComponent component={Confirm} /> },
-                        { path: 'forget-password', element: <LoadComponent component={ForgetPassword} /> },
-                        { path: 'lock-screen', element: <LoadComponent component={LockScreen} /> },
-                        { path: 'logout', element: <LoadComponent component={Logout} /> },
-                        { path: 'login2', element: <LoadComponent component={Login2} /> },
-                        { path: 'register2', element: <LoadComponent component={Register2} /> },
+                        { path: 'login', element: <LoadComponent component={Login2} /> },
+                        { path: 'register', element: <LoadComponent component={Register2} /> },
+                        { path: 'confirm', element: <LoadComponent component={Confirm2} /> },
+                        { path: 'forget-password', element: <LoadComponent component={ForgetPassword2} /> },
+                        { path: 'lock-screen', element: <LoadComponent component={LockScreen2} /> },
+                        { path: 'logout', element: <LoadComponent component={Logout2} /> },
+                        /* { path: 'login2', element: <LoadComponent component={Login2} /> }, */
+                        /* { path: 'register2', element: <LoadComponent component={Register2} /> },
                         { path: 'confirm2', element: <LoadComponent component={Confirm2} /> },
                         { path: 'forget-password2', element: <LoadComponent component={ForgetPassword2} /> },
-                        { path: 'lock-screen2', element: <LoadComponent component={LockScreen2} /> },
-                        { path: 'logout2', element: <LoadComponent component={Logout2} /> },
+                        { path: 'lock-screen2', element: <LoadComponent component={LockScreen2} /> }, */
+                        /* { path: 'logout2', element: <LoadComponent component={Logout2} /> }, */
                     ],
                 },
                 {
@@ -263,6 +265,10 @@ const AllRoutes = () => {
                         {
                             path: 'chat',
                             element: <LoadComponent component={ChatApp} />,
+                        },
+                        {
+                            path: 'cadastro',
+                            element: <LoadComponent component={Cadastro} />,
                         },
                         {
                             path: 'crm',

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Logo from 'assets/images/logo.png';
+import Logo from 'assets/images/logo-dark.png';
 import { useAccountLayout } from './hooks';
 
 type AccountLayoutProps = {
